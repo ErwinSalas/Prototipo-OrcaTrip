@@ -4,10 +4,13 @@
 angular.module('mainModule',["ngRoute"])
 .config(['$routeProvider',function($routeProvider)
     {
-        $routeProvider.when("/main",{
+        $routeProvider.when("/user",{
             templateUrl:'dashboard.html',
             controller: 'dashboardCtrl'
-        })
+        }).when("/inicio",{
+                templateUrl:'dashboard.html',
+                controller: 'dashboardCtrl'
+            })
         .when("/map",{
             templateUrl:'Maps/map.html',
             controller: 'mapCtrl'

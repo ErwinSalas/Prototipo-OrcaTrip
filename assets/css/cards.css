@@ -1,0 +1,191 @@
+.card-m {
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+.card-m .card-m-title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.card-m .card-m-title.activator {
+    cursor: pointer;
+}
+
+.card-m.small, .card-m.medium, .card-m.large {
+    position: relative;
+}
+
+.card-m.small .card-m-image, .card-m.medium .card-m-image, .card-m.large .card-m-image {
+    max-height: 60%;
+    overflow: hidden;
+}
+
+.card-m.small .card-m-image + .card-m-content, .card-m.medium .card-m-image + .card-m-content, .card-m.large .card-m-image + .card-m-content {
+    max-height: 40%;
+}
+
+.card-m.small .card-m-content, .card-m.medium .card-m-content, .card-m.large .card-m-content {
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.card-m.small .card-m-action, .card-m.medium .card-m-action, .card-m.large .card-m-action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card-m.small {
+    height: 300px;
+}
+
+.card-m.medium {
+    height: 400px;
+}
+
+.card-m.large {
+    height: 500px;
+}
+
+.card-m.horizontal {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.card-m.horizontal.small .card-m-image, .card-m.horizontal.medium .card-m-image, .card-m.horizontal.large .card-m-image {
+    height: 100%;
+    max-height: none;
+    overflow: visible;
+}
+
+.card-m.horizontal.small .card-m-image img, .card-m.horizontal.medium .card-m-image img, .card-m.horizontal.large .card-m-image img {
+    height: 100%;
+}
+
+.card-m.horizontal .card-m-image {
+    max-width: 50%;
+}
+
+.card-m.horizontal .card-m-image img {
+    border-radius: 2px 0 0 2px;
+    max-width: 100%;
+    width: auto;
+}
+
+.card-m.horizontal .card-m-stacked {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+}
+
+.card-m.horizontal .card-m-stacked .card-m-content {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.card-m.sticky-action .card-m-action {
+    z-index: 2;
+}
+
+.card-m.sticky-action .card-m-reveal {
+    z-index: 1;
+    padding-bottom: 64px;
+}
+
+.card-m .card-m-image {
+    position: relative;
+}
+
+.card-m .card-m-image img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-m .card-m-image .card-m-title {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 24px;
+}
+
+.card-m .card-m-content {
+    padding: 24px;
+    border-radius: 0 0 2px 2px;
+}
+
+.card-m .card-m-content p {
+    margin: 0;
+    color: inherit;
+}
+
+.card-m .card-m-content .card-m-title {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.card-m .card-m-content .card-m-title i {
+    line-height: 32px;
+}
+
+.card-m .card-m-action {
+    position: relative;
+    background-color: inherit;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 16px 24px;
+}
+
+.card-m .card-m-action:last-child {
+    border-radius: 0 0 2px 2px;
+}
+
+.card-m .card-m-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #ffab40;
+    margin-right: 24px;
+    transition: color .3s ease;
+    text-transform: uppercase;
+}
+
+.card-m .card-m-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #ffd8a6;
+}
+
+.card-m .card-m-reveal {
+    padding: 24px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    overflow-y: auto;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.card-m .card-m-reveal .card-m-title {
+    cursor: pointer;
+    display: block;
+}

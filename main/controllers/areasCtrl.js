@@ -3,14 +3,14 @@
  */
 angular.module('mainModule')
     .controller('areasCtrl', function($scope) {
-        $scope.avistamientos= [
+        $scope.poligons= [
             {
                 latitud: 48.553352,
                 longitud: -125.086479,
                 color: 'red',
                 fillColor: '#f03',
                 fillOpacity: 0.5,
-                radius: 500
+                radius: 105000
             },
             {
                 latitud: 50.817163,
@@ -18,7 +18,7 @@ angular.module('mainModule')
                 color: 'red',
                 fillColor: '#f03',
                 fillOpacity: 0.5,
-                radius: 500
+                radius: 105000
             },
             {
                 latitud: 73.292133,
@@ -26,7 +26,7 @@ angular.module('mainModule')
                 color: 'red',
                 fillColor: '#f03',
                 fillOpacity: 0.5,
-                radius: 500
+                radius: 105000
             }
         ];
         var mymap =  L.map('mapid',{attributionControl: false})
@@ -39,13 +39,13 @@ angular.module('mainModule')
 
         $scope.init=function () {
             console.log("entro")
-            for (var i= 0;i< $scope.avistamientos.length;i++ ){
-                console.log( $scope.avistamientos[i]);
-                var circle = L.circle([element[i].latitud, element[i].longitud], {
-                    color: element[i].color,
-                    fillColor: element[i].fillColor,
-                    fillOpacity: element[i].fillOpacity,
-                    radius: element[i].radius
+            for (var i= 0;i< $scope.poligons.length;i++ ){
+                console.log( $scope.poligons[i]);
+                var circle = L.circle([$scope.poligons[i].latitud, $scope.poligons[i].longitud], {
+                    color: $scope.poligons[i].color,
+                    fillColor: $scope.poligons[i].fillColor,
+                    fillOpacity: $scope.poligons[i].fillOpacity,
+                    radius: $scope.poligons[i].radius
                 }).addTo(mymap);
             }
 
