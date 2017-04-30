@@ -7734,6 +7734,8 @@ html.ie11 .bs-searchbox .form-control {
 .mapsize{
   height: 500px;
   position: relative;
-  margin: 10%;
+  margin: 12% 4% ;
+  border-width: 12px;
+  border-color: #1E88E5;
 
 }
