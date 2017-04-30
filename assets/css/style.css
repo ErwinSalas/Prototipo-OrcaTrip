@@ -2943,7 +2943,7 @@ section.content {
     color: #ffffff;
     padding: 20px;
     position: relative;
-    background-color: #140e39;
+    background-color: #2e6dbb;
     border-bottom: 1px solid rgba(204, 204, 204, 0.35); }
 
     .card .header .header-dropdown {
@@ -3056,7 +3056,7 @@ section.content {
   .info-box .icon {
     display: inline-block;
     text-align: center;
-    background-color: #140e39;
+    background-color: #2e6dbb;
     min-width: 80px; }
     .info-box .icon i {
       color: #fff;
