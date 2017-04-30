@@ -4,12 +4,12 @@ Project OrcaTrip
 
 Team Members
 
-    "Luis Andres Fernandez Calderon"
-    "Jafeth Steven Vásquez Herrera"
-    "Felipe Martínez Barahona"
-    "Brayan Gerardo Arrieta Alfaro"
-    "Edward Andrey Murillo Castro"
-    "Rogelio González Quirós"
+    Luis Andres Fernandez Calderon
+    Jafeth Steven Vásquez Herrera
+    Felipe Martínez Barahona
+    Brayan Gerardo Arrieta Alfaro
+    Edward Andrey Murillo Castro
+    Rogelio González Quirós
 
 Project Description
 
