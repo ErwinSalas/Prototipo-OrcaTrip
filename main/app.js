@@ -12,6 +12,10 @@ angular.module('mainModule',["ngRoute"])
             templateUrl:'Maps/map.html',
             controller: 'mapCtrl'
         })
+        .when("/avistamiento",{
+            templateUrl:'Avistamientos/avistamientos.html',
+            controller: 'avistamientosCtrl'
+        })
 
         
     }
