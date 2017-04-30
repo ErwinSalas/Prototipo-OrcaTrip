@@ -1,0 +1,28 @@
+<div class="container-fluid">
+
+    <!-- Widgets -->
+    <div class="card" >
+        <div class="header">
+            <h2 >Mensajes</h2>
+        </div>
+        <ul class="list-group-custom" ng-repeat="message in messages">
+            <li class=" info-box  hover-expand-effect">
+                    <div class="icon ">
+                        <i class="material-icons">forum</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">{{message.title}}</div>
+
+                        <small >
+                            Mensaje :{{message.body}}
+                            <br>
+                            Publicacíon: {{message.publish}}
+                        </small>
+                </div>
+            </li>
+        </ul>
+    </div>
+        <!-- #END# Task Info -->
+        <!-- Browser Usage -->
+    </div>
+</div>
