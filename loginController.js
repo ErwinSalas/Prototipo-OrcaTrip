@@ -1,38 +1,24 @@
-var app = angular.module('loginModule',["ngRoute","ngResource"])
+var app = angular.module('loginModule',["ngRoute"])
     .controller('loginController', function($scope, $http) {
 
         // modelo de datos.
-        $scope.username = "";
-        $scope.password = "";
+        $scope.ida = "";
+        $scope.pass = "";
 
         /**
          * Ejecuta el inicio de sesión.
          */
 
         $scope.doLogin = function () {
-            $http({
-                method: "GET",
-                url: API_ROOT+'/user/login/web?username={0}&password={1}'
-                    .format(Base64.toBase64($scope.username, true).toString(), Base64.toBase64($scope.password, true).toString())
-            }).then(function mySucces(response) {
-                console.log(response.data);
-                console.log((API_ROOT + '/user/login/web?username={0}&password={1}')
-                    .format(Base64.toBase64($scope.username, true).toString(), Base64.toBase64($scope.password, true).toString()))
-                var meta = response.data.metadata;
+                var id=$scope.ida;
+                var pass=$scope.pass;
 
-                if (meta.operationResult == 'Ok') {
+                if (id=="1" && pass=="1") {
 
-                    var content = response.data.content;
-                    console.log(content);
-                    var userData = content.user;
-                    console.log(userData);
-                    saveSession(content);
-
-                    window.location.href = ('{0}/MainView.html'.format(userData.userType == "Admin" ? "admin" : "main"));
+                    window.location.href = ('main/MainView.html');
                 } else {
                     alert("Credenciales incorrectas");
                 }
-            });
         }
 
         /**
